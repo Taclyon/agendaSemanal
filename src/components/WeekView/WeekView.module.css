@@ -1,10 +1,11 @@
+/* CONTENEDOR GRID */
 .container {
   display: grid;
   gap: 12px;
   padding: 16px;
 }
 
-/* 📱 Mobile: 1 columna */
+/* 📱 Mobile */
 .container {
   grid-template-columns: 1fr;
 }
@@ -30,28 +31,115 @@
   }
 }
 
+/* COLUMNA DE DÍA */
 .dayColumn {
   border: 1px solid #e5e7eb;
-  border-radius: 12px;
+  border-radius: 14px;
   padding: 12px;
-  min-height: 140px;
+  min-height: 180px;
   background-color: #f9fafb;
   transition: all 0.2s ease;
+  cursor: pointer;
 }
 
 .dayColumn:hover {
   transform: translateY(-3px);
 }
 
+/* TÍTULO DEL DÍA */
 .dayTitle {
   font-weight: 600;
   margin-bottom: 8px;
   font-size: 14px;
 }
 
-/* 📱 Mejor legibilidad en móvil */
+/* TARJETA DE TAREA */
+.taskCard {
+  border-radius: 10px;
+  padding: 8px;
+  margin-top: 8px;
+  font-size: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  background-color: white;
+}
+
+/* 🔥 PRIORIDADES */
+
+/* 🔴 Alta */
+.priorityAlta {
+  border-left: 4px solid #ef4444;
+  background-color: #fef2f2;
+}
+
+/* 🟡 Media */
+.priorityMedia {
+  border-left: 4px solid #f59e0b;
+  background-color: #fffbeb;
+}
+
+/* 🟢 Baja */
+.priorityBaja {
+  border-left: 4px solid #10b981;
+  background-color: #ecfdf5;
+}
+
+/* ETIQUETA DE PRIORIDAD */
+.priorityLabel {
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 6px;
+  background-color: #e5e7eb;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+/* BOTONES */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+
+.actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: transform 0.1s ease;
+}
+
+.actions button:hover {
+  transform: scale(1.2);
+}
+
+/* 📱 Ajustes mobile */
 @media (max-width: 480px) {
   .dayTitle {
     font-size: 16px;
   }
+
+  .taskCard {
+    font-size: 13px;
+  }
+}
+
+.taskHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.labelAlta {
+  background-color: #fecaca;
+  color: #991b1b;
+}
+
+.labelMedia {
+  background-color: #fde68a;
+  color: #92400e;
+}
+
+.labelBaja {
+  background-color: #bbf7d0;
+  color: #065f46;
 }

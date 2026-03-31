@@ -3,7 +3,6 @@ import { format, startOfWeek, endOfWeek, getWeek } from "date-fns";
 
 export default function Header() {
   const today = new Date();
-
   const weekNumber = getWeek(today, { weekStartsOn: 1 });
   const start = startOfWeek(today, { weekStartsOn: 1 });
   const end = endOfWeek(today, { weekStartsOn: 1 });
