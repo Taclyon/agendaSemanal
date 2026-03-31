@@ -1,7 +1,14 @@
 import React from 'react'
+import WeekView from '../components/WeekView/WeekView'
+import Header from '../components/Header/Header'
 
-export const Agenda = () => {
+const Agenda = () => {
   return (
-    <div>Agenda</div>
+   <>
+    <Header />
+    <WeekView />
+   </>
   )
 }
+
+export default Agenda

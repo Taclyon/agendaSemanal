@@ -1,0 +1,29 @@
+.container {
+  padding: 16px;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: white;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* 💻 Desktop */
+@media (min-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
+}
+
+.subtitle {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* 📱 Mobile ajuste */
+@media (max-width: 480px) {
+  .subtitle {
+    font-size: 12px;
+  }
+}

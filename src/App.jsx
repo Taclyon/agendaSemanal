@@ -1,7 +1,6 @@
 import React from 'react'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import Agenda from './pages/Agenda'
-
 const App = () => {
   return (
     
