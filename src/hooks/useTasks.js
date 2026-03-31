@@ -29,5 +29,9 @@ const saveTask = (task) => {
   });
 };
 
-  return { tasks, addTask, deleteTask, saveTask };
+const clearTasks = () => {
+  return setTasks([])
+}
+
+  return { tasks, addTask, deleteTask, saveTask, clearTasks };
 }

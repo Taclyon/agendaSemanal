@@ -19,11 +19,11 @@ export default function WeekView() {
     const [selectedDay, setSelectedDay] = useState("");
     const [editingTask, setEditingTask] = useState(null);
     const [selectedDate, setSelectedDate] = useState(new Date());
-    
 
-    
 
-    const { tasks, saveTask, deleteTask } = useTasks();
+
+
+    const { tasks, saveTask, deleteTask, clearTasks } = useTasks();
 
     // 🔥 Helper para colores por prioridad
     const getPriorityClass = (priority) => {
@@ -39,17 +39,17 @@ export default function WeekView() {
         }
     };
     const getPriorityLabelClass = (priority) => {
-  switch (priority?.toLowerCase()) {
-    case "alta":
-      return styles.labelAlta;
-    case "media":
-      return styles.labelMedia;
-    case "baja":
-      return styles.labelBaja;
-    default:
-      return "";
-  }
-};
+        switch (priority?.toLowerCase()) {
+            case "alta":
+                return styles.labelAlta;
+            case "media":
+                return styles.labelMedia;
+            case "baja":
+                return styles.labelBaja;
+            default:
+                return "";
+        }
+    };
 
     const openModal = (day) => {
         setSelectedDay(day);
@@ -65,18 +65,32 @@ export default function WeekView() {
 
     return (
         <>
-        <input
-  type="date"
-  onChange={(e) => setSelectedDate(new Date(e.target.value))}
-  style={{
-    margin: "10px 20px",
-    padding: "8px",
-    borderRadius: "8px"
-  }}
-/>
+            <input
+                type="date"
+                onChange={(e) => setSelectedDate(new Date(e.target.value))}
+                style={{
+                    margin: "10px 20px",
+                    padding: "8px",
+                    borderRadius: "8px"
+                }}
+            />
             {/* Botón exportar */}
             <div style={{ padding: "10px 20px" }}>
-                <ExportPDFButton tasks={tasks} selectedDate={ selectedDate } />
+                <ExportPDFButton tasks={tasks} selectedDate={selectedDate} />
+                <button
+                    onClick={clearTasks}
+                    style={{
+                        margin: "0 15px",
+                        padding: "10px 16px",
+                        backgroundColor: "#ef4444",
+                        color: "white",
+                        border: "none",
+                        borderRadius: "8px",
+                        cursor: "pointer"
+                    }}
+                >
+                    Limpiar agenda
+                </button>
             </div>
 
             <div className={styles.container}>
