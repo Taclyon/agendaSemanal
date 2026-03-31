@@ -1,37 +1,37 @@
 # 📅 Agenda Semanal App
 
-Aplicación web moderna desarrollada con **React** para gestionar tareas semanales por funcionarios, sectores y niveles de prioridad, con exportación a PDF profesional.
+Aplicação web moderna desenvolvida com **React** para gerenciar tarefas semanais por funcionários, setores e níveis de prioridade, com exportação para PDF profissional.
 
 ---
 
 ## 🚀 Demo (opcional)
 
-> Puedes agregar aquí el link cuando la subas (Vercel, Netlify, etc.)
+> Adicione aqui o link quando publicar o projeto (Vercel, Netlify, etc.)
 
 ---
 
-## 🧠 Descripción
+## 🧠 Descrição
 
-Esta aplicación permite crear, visualizar, editar y eliminar tareas organizadas por días de la semana.
-Incluye persistencia local y generación de reportes en PDF con diseño profesional.
+Esta aplicação permite criar, visualizar, editar e excluir tarefas organizadas por dias da semana.
+Inclui persistência local e geração de relatórios em PDF com design profissional.
 
 ---
 
 ## ✨ Funcionalidades
 
-* ✅ Crear tareas por día
-* ✏️ Editar tareas existentes
-* 🗑️ Eliminar tareas
-* 🔴🟡🟢 Prioridad visual (alta, media, baja)
-* 📱 Diseño responsive (mobile / tablet / desktop)
-* 💾 Persistencia con `localStorage`
-* 📄 Exportación a PDF profesional
-* 📅 Selección manual de semana
-* ♻️ Limpiar toda la agenda
+* ✅ Criar tarefas por dia
+* ✏️ Editar tarefas existentes
+* 🗑️ Excluir tarefas
+* 🔴🟡🟢 Prioridade visual (alta, média, baixa)
+* 📱 Design responsivo (mobile / tablet / desktop)
+* 💾 Persistência com `localStorage`
+* 📄 Exportação para PDF profissional
+* 📅 Seleção manual da semana
+* ♻️ Limpar toda a agenda
 
 ---
 
-## 🧱 Tecnologías utilizadas
+## 🧱 Tecnologias utilizadas
 
 * ⚛️ React
 * 🎨 CSS Modules
@@ -41,7 +41,7 @@ Incluye persistencia local y generación de reportes en PDF con diseño profesio
 
 ---
 
-## 📂 Estructura del proyecto
+## 📂 Estrutura do projeto
 
 ```
 src/
@@ -64,21 +64,21 @@ src/
 
 ---
 
-## ⚙️ Instalación
+## ⚙️ Instalação
 
-1. Clona el repositorio:
+1. Clone o repositório:
 
 ```bash
-git clone https://github.com/tu-usuario/agenda-semanal.git
+git clone https://github.com/seu-usuario/agenda-semanal.git
 ```
 
-2. Instala dependencias:
+2. Instale as dependências:
 
 ```bash
 npm install
 ```
 
-3. Ejecuta el proyecto:
+3. Execute o projeto:
 
 ```bash
 npm run dev
@@ -86,21 +86,21 @@ npm run dev
 
 ---
 
-## 🧾 Exportación a PDF
+## 🧾 Exportação para PDF
 
-El PDF incluye:
+O PDF inclui:
 
-* Semana actual o seleccionada
-* Rango de fechas
-* Tareas agrupadas por día
-* Indicadores de prioridad
-* Diseño limpio y profesional
+* Semana atual ou selecionada
+* Intervalo de datas
+* Tarefas organizadas por dia
+* Indicadores de prioridade
+* Design limpo e profissional
 
 ---
 
-## 📱 Responsive Design
+## 📱 Design Responsivo
 
-La aplicación está optimizada para:
+A aplicação está otimizada para:
 
 * 📱 Mobile
 * 📲 Tablet
@@ -108,23 +108,23 @@ La aplicación está optimizada para:
 
 ---
 
-## 🔮 Próximas mejoras
+## 🔮 Melhorias futuras
 
-* 🔐 Autenticación de usuarios
+* 🔐 Autenticação de usuários
 * ☁️ Backend (Supabase / Firebase)
-* 📊 Dashboard de estadísticas
-* 🎨 Modo oscuro
-* 🔄 Drag & Drop (tipo Trello)
-* 🏢 Personalización con logo empresarial
+* 📊 Dashboard com estatísticas
+* 🌙 Modo escuro
+* 🔄 Drag & Drop (estilo Trello)
+* 🏢 Personalização com logo da empresa
 
 ---
 
 ## 👨‍💻 Autor
 
-Desarrollado por **Tomas Antonio Cartaya Lyon**
+Desenvolvido por **Tomas Antonio Cartaya Lyon**
 
 ---
 
-## 📄 Licencia
+## 📄 Licença
 
-Este proyecto está bajo la licencia MIT.
+Este projeto está sob a licença MIT.

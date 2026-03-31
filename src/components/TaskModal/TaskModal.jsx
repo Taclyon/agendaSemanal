@@ -69,7 +69,7 @@ export default function TaskModal({
             onChange={(e) => setSector(e.target.value)}
             required
           >
-            <option value="">Seleccionar Sector</option>
+            <option value="">Seleccionar Setor</option>
             <option value="Infantil">Infantil</option>
             <option value="Masculino">Masculino</option>
             <option value="Perfumaria">Perfumaria</option>

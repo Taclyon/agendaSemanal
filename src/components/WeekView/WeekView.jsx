@@ -5,11 +5,11 @@ import { useTasks } from "../../hooks/useTasks";
 import ExportPDFButton from "../ExportPDF/ExportPDFButton";
 
 const days = [
-    "Lunes",
-    "Martes",
-    "Miércoles",
-    "Jueves",
-    "Viernes",
+    "Segunda-feira",
+    "Terça-feira",
+    "Quarta-feira",
+    "Quinta-feira",
+    "Sexta-feira",
     "Sábado",
     "Domingo"
 ];
@@ -89,7 +89,7 @@ export default function WeekView() {
                         cursor: "pointer"
                     }}
                 >
-                    Limpiar agenda
+                    Limpar agenda
                 </button>
             </div>
 
