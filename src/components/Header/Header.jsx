@@ -11,11 +11,15 @@ export default function Header() {
   const endFormatted = format(end, "dd MMM");
 
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>Agenda Semanal</h1>
-      <p className={styles.subtitle}>
-        Semana {weekNumber} | {startFormatted} - {endFormatted}
-      </p>
-    </div>
+    <header className={styles.header}>
+      <div className={styles.headerContent}>
+        <h1 className={styles.title}>Planejamento Semanal Ana</h1>
+        <div className={styles.subtitleWrapper}>
+          <span className={styles.subtitle}>Semana {weekNumber}</span>
+          <span className={styles.separator}>|</span>
+          <span className={styles.subtitle}>{startFormatted} - {endFormatted}</span>
+        </div>
+      </div>
+    </header>
   );
 }

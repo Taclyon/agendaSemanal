@@ -32,8 +32,8 @@ export default function WeekView() {
                 return styles.priorityAlta;
             case "media":
                 return styles.priorityMedia;
-            case "baja":
-                return styles.priorityBaja;
+            case "baixa":
+                return styles.priorityBaixa;
             default:
                 return "";
         }
@@ -44,8 +44,8 @@ export default function WeekView() {
                 return styles.labelAlta;
             case "media":
                 return styles.labelMedia;
-            case "baja":
-                return styles.labelBaja;
+            case "baixa":
+                return styles.labelBaixa;
             default:
                 return "";
         }
@@ -98,9 +98,10 @@ export default function WeekView() {
                     <div
                         key={day}
                         className={styles.dayColumn}
-                        onClick={() => openModal(day)}
                     >
                         <div className={styles.dayTitle}>{day}</div>
+
+                        <button onClick={() => openModal(day)}>➕ Adicionar Tarefa</button>
 
                         {/* Tareas del día */}
                         {tasks
@@ -125,8 +126,10 @@ export default function WeekView() {
                                         <button onClick={() => handleEdit(t)}>✏️</button>
                                         <button onClick={() => deleteTask(t.id)}>🗑️</button>
                                     </div>
+
                                 </div>
                             ))}
+                            
                     </div>
                 ))}
             </div>

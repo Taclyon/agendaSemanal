@@ -77,8 +77,8 @@
   background-color: #fffbeb;
 }
 
-/* 🟢 Baja */
-.priorityBaja {
+/* 🟢 Baixa */
+.priorityBaixa {
   border-left: 4px solid #10b981;
   background-color: #ecfdf5;
 }
@@ -105,12 +105,17 @@
   border: none;
   cursor: pointer;
   font-size: 14px;
-  transition: transform 0.1s ease;
+  transition: transform 0.2 ease;
+}
+button:hover {
+   transform: scale(1.1);
+   background-color: rgba(0, 0, 0, 0.3);
 }
 
 .actions button:hover {
   transform: scale(1.2);
 }
+
 
 /* 📱 Ajustes mobile */
 @media (max-width: 480px) {
@@ -139,7 +144,7 @@
   color: #92400e;
 }
 
-.labelBaja {
+.labelBaixa {
   background-color: #bbf7d0;
   color: #065f46;
 }

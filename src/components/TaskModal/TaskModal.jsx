@@ -14,7 +14,7 @@ export default function TaskModal({
   const [employee, setEmployee] = useState(editingTask?.employee || "");
   const [sector, setSector] = useState(editingTask?.sector || "");
   const [task, setTask] = useState(editingTask?.task || "");
-  const [priority, setPriority] = useState(editingTask?.priority || "media");
+  const [priority, setPriority] = useState(editingTask?.priority || "Prioridade");
 
   // Si el modal no está abierto, no renderizamos nada.
   if (!isOpen) return null;
@@ -37,9 +37,13 @@ export default function TaskModal({
     };
 
     addTask(taskData);
-    
+    setSector('')
+    setEmployee('')
+    setPriority('')
+    setTask('')    
     // 2. NO NECESITAS resetear los estados manualmente aquí 
     // si el componente se desmonta al llamar a onClose().
+    
     onClose();
   };
 
@@ -47,7 +51,7 @@ export default function TaskModal({
     <div className={styles.overlay}>
       <div className={styles.modal}>
         <h2>
-          {editingTask ? "Editar tarea" : "Agregar tarea"} - {selectedDay}
+          {editingTask ? "Editar tarea" : "Adicionar tarefa"} - {selectedDay}
         </h2>
 
         <form className={styles.form} onSubmit={handleSubmit}>
@@ -57,7 +61,7 @@ export default function TaskModal({
             onChange={(e) => setEmployee(e.target.value)}
             required
           >
-            <option value="">Seleccionar Funcionario</option>
+            <option value="">Selecionar Colaborador</option>
             <option value="Adrys">Adrys</option>
             <option value="Manuela">Manuela</option>
             <option value="Luziane">Luziane</option>
@@ -69,7 +73,7 @@ export default function TaskModal({
             onChange={(e) => setSector(e.target.value)}
             required
           >
-            <option value="">Seleccionar Setor</option>
+            <option value="">Selecionar Setor</option>
             <option value="Infantil">Infantil</option>
             <option value="Masculino">Masculino</option>
             <option value="Perfumaria">Perfumaria</option>
@@ -78,7 +82,7 @@ export default function TaskModal({
           {/* Nombre de la tarea */}
           <input
             type="text"
-            placeholder="Ej: Reponer stock"
+            placeholder="Ex: Adicionar Tarefa"
             value={task}
             onChange={(e) => setTask(e.target.value)}
             required
@@ -89,7 +93,8 @@ export default function TaskModal({
             value={priority}
             onChange={(e) => setPriority(e.target.value)}
           >
-            <option value="baja">Baja</option>
+            <option value=''>Prioridade</option>
+            <option value="baixa">Baixa</option>
             <option value="media">Media</option>
             <option value="alta">Alta</option>
           </select>
@@ -99,7 +104,7 @@ export default function TaskModal({
               Cancelar
             </button>
             <button type="submit" className={styles.btnSave}>
-              {editingTask ? "Actualizar Tarea" : "Guardar Tarea"}
+              {editingTask ? "Atualizar Tarefa" : "Guardar Tarefa"}
             </button>
           </div>
         </form>
