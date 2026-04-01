@@ -1,3 +1,5 @@
+link-para-visualizar-->  https://agenda-semanal-one.vercel.app/
+
 # 📅 Agenda Semanal App
 
 Aplicação web moderna desenvolvida com **React** para gerenciar tarefas semanais por funcionários, setores e níveis de prioridade, com exportação para PDF profissional.
